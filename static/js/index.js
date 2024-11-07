@@ -53,9 +53,6 @@ $(function() {
     if (pos2 > $('#about').offset().top) {
       highlightLink('about');
     }
-    if (pos2 > $('#portfolio').offset().top) {
-      highlightLink('portfolio');
-    }
 
     // Prevent Hover on Scroll
     clearTimeout(lockTimer);
@@ -97,33 +94,6 @@ $(function() {
     $('.link-wrap').toggleClass('visible');
   });
 
-  posFilterBar($('.filter').first());
-
-  $('.filter').click(function() {
-    posFilterBar(this);
-  });
-
-  function posFilterBar(elem) {
-    var origin = $(elem)
-      .parent()
-      .offset().left;
-    var pos = $(elem).offset().left;
-    $('.float-bar').css({
-      left: pos - origin,
-      width: $(elem).innerWidth()
-    });
-    $('.float-bar .row').css('left', (pos - origin) * -1);
-  }
-
-  // GALLERY
-  $('#gallery').mixItUp({});
-
-  function mixClear() {
-    setTimeout(function() {
-      $('#gallery').removeClass('waypoint');
-    }, 2000);
-  }
-
   // SCROLL ANIMATIONS
   function onScrollInit(items, elemTrigger) {
     var offset = $(window).height() / 3;
@@ -156,20 +126,4 @@ $(function() {
   setTimeout(function() {
     onScrollInit($('.waypoint'));
   }, 10);
-
-  $('#gallery .button').on('click', function() {
-    if(this.id == "twla") {
-      window.location = "files/TWLA-Installer.exe";
-    } else if(this.id == "xitem") {
-      window.open('https://xitem.de','_blank');
-    } else if(this.id == "maphynn") {
-      window.open('https://gitlab.maphynn.de/maphynn','_blank');
-    }else if(this.id == "imposm") {
-      window.open('https://github.com/CHP-EmAS/Imposm-Optmizer','_blank');
-    }else if(this.id == "lapin") {
-      window.open('https://emas-dev.itch.io/lapin','_blank');
-    }else if(this.id == "amazing_monk") {
-      window.open('https://www.newgrounds.com/portal/view/887167','_blank');
-    }
-  });
 });
