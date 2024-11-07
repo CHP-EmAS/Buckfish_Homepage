@@ -1,0 +1,32 @@
+{
+  "name": "homepage",
+  "version": "1.1.0",
+  "description": "Homepage",
+  "main": "index.js",
+  "scripts": {
+    "name": "printf 'Homepage'",
+    "start": "pm2 start out_javascript/homepage.js --name Homepage",
+    "stop": "pm2 delete Homepage",
+    "dev": "nodemon src_typescript/homepage.ts",
+    "build": "tsc --build --verbose",
+    "clean": "tsc --build --clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CHP-EmAS/Homepage.git"
+  },
+  "keywords": [],
+  "author": "Clemens Hübner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CHP-EmAS/Homepage/issues"
+  },
+  "homepage": "https://github.com/CHP-EmAS/Homepage#readme",
+  "dependencies": {
+    "@types/express": "^4.17.11",
+    "@types/helmet": "0.0.48",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^4.4.1"
+  }
+}
