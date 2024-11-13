@@ -95,6 +95,7 @@ $(function () {
 
     $('.mdi-menu').click(function () {
         $('.link-wrap').toggleClass('visible');
+        $('.language-selection').toggleClass('visible');
     });
 
     posFilterBar($('.filter').first());
@@ -114,6 +115,11 @@ $(function () {
         });
         $('.float-bar .row').css('left', (pos - origin) * -1);
     }
+
+    $('.language-selection').click(function () {
+        toggleLanguage();
+    });
+
 
     // GALLERY
     $('#gallery').mixItUp({});
@@ -167,5 +173,49 @@ $(function () {
         } else if (this.id == "adrianHense") {
             window.open('https://www.linkedin.com/in/adrian-hense-5a1343337/', '_blank');
         }
+    });
+
+
+    //languages
+    // Function to update content based on selected language
+    function updateContent(langData) {
+        document.querySelectorAll('[data-i18n]').forEach(element => {
+            const key = element.getAttribute('data-i18n');
+            element.innerHTML = langData[key];
+        });
+    }
+
+    // Function to set the language preference
+    function setLanguagePreference(lang) {
+        localStorage.setItem('language', lang);
+        location.reload();
+    }
+
+    // Function to fetch language data
+    async function fetchLanguageData(lang) {
+        const response = await fetch(`languages/${lang}.json`);
+        return response.json();
+    }
+
+    async function toggleLanguage() {
+        const currLanguage = localStorage.getItem('language') || 'de';
+        if (currLanguage == 'de') changeLanguage('en');
+        else changeLanguage('de');
+    }
+
+    // Function to change language
+    async function changeLanguage(lang) {
+        await setLanguagePreference(lang);
+
+        const langData = await fetchLanguageData(lang);
+        updateContent(langData);
+    }
+
+    // Call updateContent() on page load
+    window.addEventListener('DOMContentLoaded', async () => {
+        const userPreferredLanguage = localStorage.getItem('language') || 'de';
+        const langData = await fetchLanguageData(userPreferredLanguage);
+        updateContent(langData);
+        posFilterBar($('.filter').first());
     });
 });

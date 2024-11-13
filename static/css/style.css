@@ -171,6 +171,7 @@ body {
     cursor: pointer;
 }
 
+
 .disable-hover {
     pointer-events: none;
 }
@@ -829,7 +830,7 @@ section {
                 }
 
                 section:nth-of-type(3) #gallery .mix:nth-child(1) .card {
-                    background: url("../img/imposm.png") center center/cover;
+                    background: url("../img/clemensHuebner.jpg") center center/cover;
                 }
 
                 section:nth-of-type(3) #gallery .mix:nth-child(2) .card {
@@ -967,6 +968,7 @@ footer {
     section:nth-of-type(3) #gallery .mix .card {
         width: 100vw;
     }
+    
 }
 
 @media screen and (min-width: 600px) {
@@ -1058,6 +1060,11 @@ footer {
 
             nav .link-wrap div:first-child {
                 padding: 0;
+            }
+
+            nav .link-wrap div:last-child {
+                position: absolute;
+                right: 0;
             }
 
     nav .mdi-menu {

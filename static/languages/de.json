@@ -1,0 +1,19 @@
+{
+  "header": "Moin, Wir sind <span class=\"highlight\">Buckfish</span><br>und ein Indie-Spiel Studio.",
+  "about_us_title": "&Uuml;ber uns",
+  "about_us_withArrow": "&Uuml;ber uns <i class=\"mdi mdi-arrow-right\"></i>",
+  "about_us_text": "<span class=\"highlight\">Buckfish</span> ist ein Zusammenschluss von vier Studierenden, die sich w&auml;hrend ihres Masterstudiums an der HAW Hamburg kennen- und sch&auml;tzen gelernt haben. Im Laufe des Studiums wurde klar: Nicht nur auf pers&ouml;nlicher Ebene passt es, sondern auch die gemeinsam realisierten Projekte erreichen in harmonischer Zusammenarbeit eine sehr gute Qualit&auml;t",
+  "home_title": "Start",
+  "team_title": "Das Team",
+  "filter_all": "ALLE",
+  "filter_dev": "PROGRAMMIERER",
+  "filter_art": "KUNST",
+  "filter_sfx": "SOUND",
+  "team_clemensHuebner": "<div class=\"bold\">Clemens H&uuml;bner</div>-Der Berufserfahrene-<br><br>Mit &uuml;ber 3 Jahren bei Hamburgs gr&ouml;&szlig;tem Spieleentwickler Innogames bringt er eine Menge professionelles Know-How im Bereich <span class=\"highlight\">Back-End Programmierung</span>, <span class=\"highlight\">Netzwerk-Implementierung</span> und <span class=\"highlight\">Projekt Management</span>",
+  "team_clemensHuebner_link": "Webseite",
+  "team_leanderPieters": "<div class=\"bold\">Leander Pieters</div>-Die Schnittstelle-<br><br>Dank exzellenter Ausbildung in Aachen und reichlich Praxis in Hamburg erm&ouml;glicht er nicht nur das schnelle Aufsetzen von Prototypen sondern auch die optimale <span class=\"highlight\">Implementierung der Game Mechaniken</span>, Art & Sound.",
+  "team_adrianHense": "<div class=\"bold\">Adrian Hense</div>-Der Musiker-<br><br>Nicht nur f&uuml;r <span class=\"highlight\">Musik</span> und die <span class=\"highlight\">Komposition</span> brennt sein Herz, sondern auch f&uuml;r Spiele. Als Stratege k&uuml;mmert er sich zus&auml;tzlich um das Balancing und <span class=\"highlight\">Game Design</span>.",
+  "team_rouvenCabanis": "<div class=\"bold\">Rouven Cabanis</div>-Der Repr&auml;sentant-<br><br>Als Meister in Blender ist er der <span class=\"highlight\">3D-Artist</span>. Dank seines Solo-Projekt Frisia sammelt er Erfahrung mit Pitches & Networking, weshalb er sich neben Kunst um die <span class=\"highlight\">&ouml;ffentlichen Angelegenheiten</span> k&uuml;mmert.",
+  "footer": "Buckfish <span class=\"highlight\">&copy;2024</span>",
+  "language_button": "English"
+}

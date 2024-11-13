@@ -1,0 +1,19 @@
+{
+  "header": "Moin, We're <span class=\"highlight\">Buckfish</span><br>and an Indie-Game Studio.",
+  "about_us_title": "About Us",
+  "about_us_withArrow": "About Us <i class=\"mdi mdi-arrow-right\"></i>",
+  "about_us_text": "<span class=\"highlight\">Buckfish</span> is a group of four students who got to know and appreciate each other during their Master's degree at HAW Hamburg. In the course of their studies, it became clear that they not only fit together on a personal level, but that the projects they realized together also achieve a very good quality through harmonious collaboration.",
+  "home_title": "Home",
+  "team_title": "Team",
+  "filter_all": "ALL",
+  "filter_dev": "DEVELOPER",
+  "filter_art": "ART",
+  "filter_sfx": "SOUND",
+  "team_clemensHuebner": "<div class=\"bold\">Clemens H&uuml;bner</div>-The Experienced-<br><br>With over 3 years at Hamburg's largest game developer company Innogames, he brings a lot of professional know-how in the field of <span class=\"highlight\">back-end programming</span>, <span class=\"highlight\">network implementation</span> and <span class=\"highlight\">project management</span>",
+  "team_clemensHuebner_link": "Website",
+  "team_leanderPieters": "<div class=\"bold\">Leander Pieters</div>-The Interface-<br><br>Thanks to excellent education in Aachen and plenty of practice in Hamburg, he not only quickly sets up prototypes but also ensures optimal <span class=\"highlight\">implementation of the game mechanics</span>, art & sound.",
+  "team_adrianHense": "<div class=\"bold\">Adrian Hense</div>-The Musician-<br><br>His heart burns not only for <span class=\"highlight\">music</span> and <span class=\"highlight\">composition</span>, but also for games. As a strategist, he also takes care of balancing and <span class=\"highlight\">game design</span>.",
+  "team_rouvenCabanis": "<div class=\"bold\">Rouven Cabanis</div>-The Representative-<br><br>As a master in Blender, he is the <span class=\"highlight\">3D artist</span>. Thanks to his solo project Frisia, he is gaining experience with pitches and networking, which is why he takes care of <span class=\"highlight\">public affairs</span> in addition to art.",
+  "footer": "Buckfish <span class=\"highlight\">&copy;2024</span>",
+  "language_button": "Deutsch"
+}
