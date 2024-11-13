@@ -19,73 +19,147 @@
 
   </head>
   <body class="">
-    <div class="overflow-wrap">
-      <!-- HOME -->
-      
-      <section id="home" class="flex height-fix">
-        <div id="pt" class="canvas"><canvas id="canvas" width="359" height="695" style="width: 359px; height: 695px;"></canvas></div>
-        <div class="flex">
-          <div class="text">
-            Hello, We're <span class="highlight">Buckfish</span>.
-            <br>
-            We're an Indie-Game Studio.
-          </div>
+      <div class="overflow-wrap">
+          <!-- HOME -->
 
-          <div class="button page-link" dest="about">
-            About Us <i class="mdi mdi-arrow-right"></i>
-          </div>
+          <section id="home" class="flex height-fix">
+              <div id="pt" class="canvas"><canvas id="canvas" width="359" height="695" style="width: 359px; height: 695px;"></canvas></div>
+              <div class="flex">
+                  <div class="text">
+                      Moin, We're <span class="highlight">Buckfish</span>
+                      <br>
+                      and an Indie-Game Studio.
+                  </div>
 
-          <nav class="flex">
-            <div class="link-wrap">
-              <div class="page-link" dest="home">Home</div>
-              <div class="page-link" dest="about">About</div>
-            </div>
-            <i class="mdi mdi-menu"></i>
-          </nav>
-        </div>
-      </section>
+                  <div class="button page-link" dest="about">
+                      About Us <i class="mdi mdi-arrow-right"></i>
+                  </div>
 
-      <!-- ABOUT -->
-      <section id="about">
-        <div class="container flex">
-          <div class="header waypoint" data-animation="slide-in-left">
-            ABOUT
-          </div>
-          <div class="header-bar waypoint" data-animation="slide-in-left" data-delay=".5s" style="animation-delay: 0.5s;"></div>
-
-          <div class="skills-wrapper flex row-gt-sm">
-            <div class="flex flex-50-gt-sm waypoint" data-animation="slide-in-left">
-              <img src="img/me.jpg" class="me">
-              
-              <div class="label bold">Who we are</div>
-              <div>
-                We are an indie game studio based in beautiful Hamburg, Germany.<br>
-                Our team consists of four passionate individuals:<br>
-                <a class="highlight" href="https://www.linkedin.com/in/rouven-cabanis-b8408a215/" target="_blank">Rouven</a>, our talented artist<br>
-                <a class="highlight" href="https://www.linkedin.com/in/adrian-hense-5a1343337" target="_blank">Adrian</a>, our creative sound designer<br>
-                <a class="highlight" href="https://www.linkedin.com/in/leander-pieters" target="_blank">Leander</a>, our dedicated Unity developer<br>
-                <a class="highlight" href="https://www.linkedin.com/in/clemens-hübner-461905202" target="_blank">Clemens</a>, our skilled network developer<br>
-                <br>
-                We have a passion for programming video games.
+                  <nav class="flex">
+                      <div class="link-wrap">
+                          <div class="page-link" dest="home">Home</div>
+                          <div class="page-link" dest="about">About Us</div>
+                          <div class="page-link" dest="team">Team</div>
+                      </div>
+                      <i class="mdi mdi-menu"></i>
+                  </nav>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
+          </section>
 
-      <footer>
-        <i class="mdi mdi-chevron-double-up page-link" dest="home"></i>
+          <!-- ABOUT -->
+          <section id="about">
+              <div class="container flex">
+                  <div class="header waypoint" data-animation="slide-in-left">
+                      ABOUT US
+                  </div>
+                  <div class="header-bar waypoint" data-animation="slide-in-left" data-delay=".5s" style="animation-delay: 0.5s;"></div>
 
-        <div class="info-box">
-          <div class="footnote">
-            Buckfish <span class="highlight">©2024</span>
-          </div>
-        </div>
-      </footer>
-    </div>
+                  <div class="skills-wrapper flex row-gt-sm">
+                      <div class="flex flex-50-gt-sm waypoint" data-animation="slide-in-left">
+                          <div>
+                              <span class="highlight">Buckfish</span> ist ein Zusammenschluss von vier Studierenden, die sich 
+                              während ihres Masterstudiums an der HAW Hamburg kennen- und schätzen 
+                              gelernt haben. Im Laufe des Studiums wurde klar: nicht nur auf 
+                              persönlicher Ebene passt es, sondern die zusammen realisierten 
+                              Projekte erreichen in harmonischer Zusammenarbeit eine sehr gute Qualität.
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+
+          <!-- TEAM -->
+          <section class="flex" id="team">
+              <div class="header waypoint" data-animation="slide-in-right">
+                  TEAM
+              </div>
+              <div class="header-bar waypoint" data-animation="slide-in-right" data-delay=".3s" style="animation-delay: 0.3s;"></div>
+
+              <div class="filter-wrap waypoint" data-animation="fade-in">
+                  <div class="flex row">
+                      <div class="filter active" data-filter="all">ALL</div>
+                      <div class="filter" data-filter=".dev">DEVELOPER</div>
+                      <div class="filter" data-filter=".art">ARTISTS</div>
+                      <div class="filter" data-filter=".sfx">SOUND</div>
+                  </div>
+                  <div class="float-bar" style="left: 0px; width: 56px;">
+                      <div class="flex row" style="left: 0px;">
+                          <div class="filter active" data-filter="all">ALL</div>
+                          <div class="filter" data-filter=".game">DEVELOPER</div>
+                          <div class="filter" data-filter=".app">ARTISTS</div>
+                          <div class="filter" data-filter=".tool">SOUND</div>
+                      </div>
+                  </div>
+              </div>
+
+              <div id="gallery" class="container flex row wrap waypoint">
+                  <div class="mix dev" data-my-order="1" data-bound="">
+                      <div>
+                          <div class="card"></div>
+                          <div class="text">
+                              <div class="bold">Clemens Hübner</div>
+                              -Der Berufserfahrene-<br><br>Mit über 3 Jahren bei Hamburgs größtem Spieleentwickler Innogames bringt er 
+                              eine Menge professionelles Know-How im Bereich <span class="highlight">Back-End Programmierung</span>, <span class="highlight">Netzwerk-Implementierung</span> und <span class="highlight">Projekt Management</span>
+                          </div>
+                          <div class="button" id="clemensHuebner">Webseite</div>
+                      </div>
+                  </div>
+
+                  <div class="mix dev" data-my-order="1" data-bound="">
+                      <div>
+                          <div class="card"></div>
+                          <div class="text">
+                              <div class="bold">Leander Pieters</div>
+                              -Die Schnittstelle-<br><br>Dank exzellenter 
+                              Ausbildung in Aachen und reichlich Praxis in 
+                              Hamburg ermöglicht er nicht nur das schnelle 
+                              Aufsetzen von Prototypen sondern auch die 
+                              optimale <span class="highlight">Implementierung der Game Mechaniken</span>, Art & Sound.
+                          </div>
+                          <div class="button" id="leanderPieters">Linked-In</div>
+                      </div>
+                  </div>
+
+                  <div class="mix sfx" data-my-order="1" data-bound="">
+                      <div>
+                          <div class="card"></div>
+                          <div class="text">
+                              <div class="bold">Adrian Hense</div>
+                              -Der Musiker-<br><br>Nicht nur für <span class="highlight">Musik</span> und die <span class="highlight">Komposition</span> brennt sein Herz, sondern auch für Spiele. Als Stratege kümmert er sich zusätzlich um das Balancing und <span class="highlight">Game Design</span>.</div>
+                          <div class="button" id="adrianHense">Linked-In</div>
+                      </div>
+                  </div>
+
+                  <div class="mix art" data-my-order="1" data-bound="">
+                      <div>
+                          <div class="card"></div>
+                          <div class="text">
+                              <div class="bold">Rouven Cabanis</div>
+                              -Der Repräsentant-<br><br>Als Meister in Blender ist er der <span class="highlight">3D-Artist</span>. Dank seines Solo-Projekt Frisia sammelt er Erfahrung mit Pitches & Networking, weshalb er sich neben Kunst um die <span class="highlight">öffentlichen Angelegenheiten</span> kümmert.
+                          </div>
+                          <div class="button" id="rouvenCabanis">Linked-In</div>
+                      </div>
+                  </div>
+
+              </div>
+
+          </section>
+
+
+          <footer>
+              <i class="mdi mdi-chevron-double-up page-link" dest="home"></i>
+
+              <div class="info-box">
+                  <div class="footnote">
+                      Buckfish <span class="highlight">©2024</span>
+                  </div>
+              </div>
+          </footer>
+      </div>
   </body>
   <div id="preload">
-    <img src="img/me.jpg">
-    <img src="img/background.jpeg">
+      <img src="img/me.jpg">
+      <img src="img/background.jpeg">
+      <img src="img/leanderPieters.jpg">
   </div>
 </html>

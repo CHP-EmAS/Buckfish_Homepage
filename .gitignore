@@ -60,6 +60,9 @@ typings/
 # next.js build output
 .next
 
+# visual studio stuff
+.vs/
+
 # custom directory
 out_javascript/
 package-lock.json
