@@ -163,6 +163,10 @@ body {
     text-align: center;
 }
 
+.about_us {
+    font-size: 14pt;
+}
+
 #preload {
     display: none;
 }
